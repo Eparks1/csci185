@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonbon&family=Itim&display=swap');
 html {
     scroll-behavior: smooth;
 }
@@ -12,7 +13,7 @@ body {
 }
 
 /* create additional rules below:  */
-@import url('https://fonts.googleapis.com/css2?family=Bonbon&family=Itim&display=swap');
+
 h1,h2 {
     font-family:  'Bonbon', cursive;
 }
