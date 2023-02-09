@@ -1,0 +1,43 @@
+body {
+    background-color:#F0F4EF;
+}
+
+header {
+    background-color: #b4cded;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 30px;
+}
+
+nav {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 40px;
+}
+
+img {
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #344966;
+    color: white;
+    padding: 30px;
+}
