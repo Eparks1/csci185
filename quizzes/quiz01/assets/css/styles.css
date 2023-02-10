@@ -109,6 +109,14 @@ h2 {
     margin-top: 50px;
 }
 
+.location-hours>h2 {
+    color: #FFF;
+}
+
+.location-hours>p {
+color: #FFF;
+}
+
 .location-hours p {
     margin: 0;
 }
