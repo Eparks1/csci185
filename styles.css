@@ -70,6 +70,10 @@ a {
     
 }
 
+#frogdance {
+    display: flex;
+    justify-content: center;
+}
 /* Phone */
 @media screen and (max-width: 500px) {
 
@@ -82,9 +86,5 @@ a {
     img { 
         max-width:150px;
     }
-
-
-
-
 }
 
