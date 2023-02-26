@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonbon&family=Itim&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -24,6 +26,7 @@ ul {
 a {
     text-decoration: none;
     color: white;
+    font-family: 'Itim', cursive;
 }
 
 header {
@@ -36,10 +39,42 @@ header {
     flex-direction: column;
     align-items: center;
     color: white;
+    font-family: 'Itim', cursive;
 }
 
 #pfp>img {
     border-radius: 50%;
+}
+
+h2 {
+    font-family: 'Itim', cursive;
+}
+
+#about {
+    text-align: left;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#projects {
+    background-color: rgb(237, 236, 236);
+}
+
+#projects>h2 {
+    text-align: center;
+    padding:10px;
+}
+
+.project-holder {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    text-align: left;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 
