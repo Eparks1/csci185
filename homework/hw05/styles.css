@@ -1,0 +1,45 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Your CSS Code Here! */
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+    list-style: none;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background-color: rgb(69, 97, 67);
+    padding: 10px;
+}
+
+#pfp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#pfp>img {
+    border-radius: 50%;
+}
+
+
