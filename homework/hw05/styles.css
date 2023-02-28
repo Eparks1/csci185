@@ -54,7 +54,7 @@ h2 {
     text-align: left;
     margin-left: 350px;
     margin-right: 350px;
-    padding: 10px;
+    padding: 100px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -64,8 +64,9 @@ h2 {
 }
 
 #projects>h2 {
-    text-align: center;
-    padding:10px;
+    padding-left: 300px;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 
 .project-holder {
@@ -76,10 +77,104 @@ h2 {
     text-align: left;
     padding-left: 300px;
     padding-right: 300px;
+    padding-bottom: 100px;
     column-gap: 70px;
+    row-gap: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .project-holder img {
     width: 100%;
+}
+
+#contact {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+#contact h2 {
+    padding-left: 300px;  
+}
+
+#contactp {
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-left: 300px;
+    padding-right: 300px;
+    
+}
+
+input, textarea {
+    background-color: rgb(237, 236, 236);
+    border: none;
+    height: 40px;
+    border-radius: 5%;
+}
+
+textarea {
+    width: 75%;
+    height: 90px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.row-row1 {
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.row-row1 input {
+    padding-left: 10px;
+}
+
+#email {
+    width: 46%;
+}
+
+.row textarea {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.rowbutton {
+    padding-top: 10px;
+}
+
+.rowbutton input {
+    background-color: rgb(69, 97, 67);
+    color: white;
+    height: 40px;
+    border-radius: 5%;
+}
+
+#contact-info {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contact-info p {
+    /* width: 180px;
+    position: relative;
+    padding-left: 20px; */
+}
+
+contact-info .row {
+   
+}
+
+
+footer {
+    text-align: center;
+    background-color: rgb(237, 236, 236);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
