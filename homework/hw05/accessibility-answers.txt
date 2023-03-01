@@ -1,15 +1,14 @@
 1. What corrections did you have to make?
 
-Your answers here.
+I needed to add descriptions to my images. I also had to figure out how to add the labels to my forms.
 
 1. Do you think your website is usable if you turn off the CSS? Why or why not?
 
-Your answers here.
+Without the CSS it would be a lot harder to digest the information and the layout might be difficult for someone who's disabled. However, I still think it would at least function with no CSS.
 
 1. Is your site is tabbable? In other words, without the use of the mouse, are all the links and buttons accessible using the tab key?
 
-Your answers here.
-
+Yes, my site is tabbable!
 
 
 Reminder: don't forget to include a screenshot of your Wave report and link to it from your homepage!
