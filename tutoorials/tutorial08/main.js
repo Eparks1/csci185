@@ -15,10 +15,14 @@ function mouseDragged(){
     // in the right-hand panel. Replace the code below with something
     // smarter:
     const fillColor= document.querySelector ('#color').value;
+    const outlineColor= document.querySelector('#outline_color').value;
     const size= document.querySelector ('#size').value;
     const shape= document.querySelector ('#shape').value;
+
     fill(fillColor);
-    noStroke ();
+
+    stroke(outlineColor);
+
 
     // how do we only draw the shape we want?//
     if (shape === 'circle'){
