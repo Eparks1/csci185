@@ -13,9 +13,10 @@ function setup() {
 
     let counter =0;
     while (counter<8) {
-        circle (100,200 + counter * 50, 50);
+        circle (100,200 + counter * 50, 50 + counter * 10);
         counter +=1;
     }
+
 
     drawGrid(canvasWidth, canvasHeight);
 }
