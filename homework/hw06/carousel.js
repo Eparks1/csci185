@@ -1,5 +1,7 @@
+// photos[5]
+
 const photos = [
-    "images/img1-600x400.jpg",
+    "images/img1-600x400.jpg",  //0
     "images/img2-600x400.jpg",
     "images/img3-600x400.jpg",
     "images/img4-600x400.jpg",
@@ -11,16 +13,22 @@ const photos = [
     "images/img10-600x400.jpg"
 ];
 let idx = 0;
+// for (let i=0; i< photos.length; i++) {
 
+// }
 
 /* This function should:
     (1) display the new image inside of the .current-photo container, and 
     (2) update the caption inside of the .caption paragraph
 */
-function showImage() {
-    let i=0;
-    <div class="card" style="background-image:url('${photos [i]}')"></div>
+function showImage() { 
     console.log('Show image');
+
+    document.querySelector('#numberone').src=photos[idx];
+
+    document.querySelector('.caption').innerHTML = `${idx+1} out of ${photos.length}`;
+    
+
 }
 
 
@@ -30,10 +38,18 @@ function showImage() {
    If the idx gets to one less than the length of 
    the array, set idx to 0.
 */
-function forward(i) {
+function forward() {
     console.log('forward');
-    
-    showImage(current-photo += i);
+    // ++idx;
+    showImage();
+
+    if (idx == photos.length-1) {
+        idx=0;
+    }
+
+    else {
+        ++idx;
+    }
       
 }
 
@@ -46,4 +62,15 @@ function forward(i) {
 */
 function back() {
     console.log('back');
+    // --idx;
+    showImage();
+
+    if (idx == 0) {
+        idx=photos.length-1;
+    }
+
+    else {
+        --idx;
+    }
+
 }
