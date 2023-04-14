@@ -30,5 +30,5 @@ a:visited {
 }
   
 html, body {
-    cursor: url('images/cat.paw.PNG'), auto;
+    cursor: url('../Final/images/cat.paw.png'), auto;
   }
