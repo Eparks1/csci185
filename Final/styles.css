@@ -29,6 +29,6 @@ a:visited {
     color: white;
 }
   
-html, body {
+html, body, a:link {
     cursor: url('../Final/images/cat.paw.png'), auto;
   }

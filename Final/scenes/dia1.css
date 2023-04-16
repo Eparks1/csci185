@@ -71,3 +71,6 @@ a:visited {
     text-shadow: #6d60d2;
   }
   
+  html, body, a:link {
+    cursor: url('../images/cat.paw.png'), auto;
+  }

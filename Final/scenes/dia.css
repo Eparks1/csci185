@@ -64,3 +64,7 @@ a:link {
 a:visited {
     text-decoration: none;
   }
+
+  html, body, a:link {
+    cursor: url('../images/cat.paw.png'), auto;
+  }
