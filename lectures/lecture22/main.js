@@ -24,23 +24,38 @@ fetchCourses();
 */
 
 
-function search() {
-    console.log(data);
-    console.log(data[0].Title);
-    console.log(data[0].Instructors[0].Name)
 
-    // document.querySelector('.courses').innerHTML= data[900].Title + '-' + data[900].Instructors[0].Name;
-    document.querySelector('.courses').innerHTML= `
+    function search() {
+        console.log(data);
+        console.log(data[0].Title);
+        console.log(data[0].Instructors[0].Name)
+    
+        document.querySelector('.courses').innerHTML = '';  //clears it
+        // document.querySelector('.courses').innerHTML= data[900].Title + '-' + data[900].Instructors[0].Name;
+let i = 0
+const searchTerm = document.querySelector ('#search_term').value;
+while(i<data.length){ 
+        
+        let instructor= 'TBD';
+        if (data[i].Instructors.length >0) {
+            instructor= data[i].Instructors[0].Name;
+        }
+        // if (data[i].Department ==='CSCI')
+        if (instructor.includes (searchTerm) || data[i].Title.includes(searchTerm)) {
+//lines of code that add new element to the DOM 
+        document.querySelector('.courses').insertAdjacentHTML('beforeend', `
 
-        <section class="course">
-            <h2>CSCI 182.001: ${data[0].Title} </h2>
-            <p>
-                ${ data[0].days} &bull; ZEI 201 &bull; 3 credit hour(s)
-            </p>
-            <p><strong> ${data[0].Instructors[0].Name} </strong></p>
-        </section>
+            <section class="course">
+                <h2>${data[i].Code}: ${data[i].Title} </h2>
+                <p>
+                    ${data[i].Days} &bull; ${data[i].Location.FullLocation} &bull; ${data[i].Hours} credit hour(s)
+                </p>
+                <p><strong> ${instructor} </strong></p>
+            </section>
+        `);
+        }
+        i++;
+    }
 
-    `;
-
-    // const searchTerm = document.querySelector('#search_term').value;
-}
+    }
+// const searchTerm = document.querySelector('#search_term').value;
