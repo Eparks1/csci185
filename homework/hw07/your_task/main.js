@@ -27,7 +27,7 @@ async function getTracks (term) {
 
         const template = `
 
-        <section class="track-item preview">
+        <section class="track-item preview" onclick="loadTrack('${track.id}')">
             <img src=" ${track.album.image_url}" alt='track image'>
             <i class="fas play-track fa-play" aria-hidden="true"></i>
             <div class="label">
@@ -113,19 +113,19 @@ document.querySelector('#search').onkeyup = function (ev) {
     }
 }
 
-async function loadTrack (term) {
+async function loadTrack (trackid) {
 
     document.querySelector('#artist').innerHTML = '';
 
-    const url = `https://www.apitutor.org/spotify/simple/v1/search?type=track&q=${term}`;
-    const data = await fetch(url).then(response => response.json());
+    // const url = `https://www.apitutor.org/spotify/simple/v1/search?type=track&q=${term}`;
+    // const data = await fetch(url).then(response => response.json());
 
-    console.log(data);
+    // console.log(data);
 
-    const artist = data[0];
+    // const artist = data[0];
      const template=`
         <iframe style="border-radius:12px" 
-        src="https://open.spotify.com/embed/track/5y8d8RHvxb0KiTa9Nq0xWp?utm_source=generator&theme=0" 
+        src="https://open.spotify.com/embed/track/${trackid}?utm_source=generator&theme=0" 
         width="100%" 
         height="352" 
         frameBorder="0" 
