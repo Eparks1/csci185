@@ -46,7 +46,7 @@ while(i<data.length){
         document.querySelector('.courses').insertAdjacentHTML('beforeend', `
 
             <section class="course">
-                <h2>${data[i].Code}: ${data[i].Title} </h2>
+                <h${data[i].Code}2>: ${data[i].Title} </h2>
                 <p>
                     ${data[i].Days} &bull; ${data[i].Location.FullLocation} &bull; ${data[i].Hours} credit hour(s)
                 </p>
