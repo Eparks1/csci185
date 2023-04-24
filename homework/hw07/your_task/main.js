@@ -55,7 +55,7 @@ async function getAlbums (term) {
     const url = `https://www.apitutor.org/spotify/simple/v1/search?type=album&q=${term}`;
     const data = await fetch(url).then(response => response.json());
 
-     console.log(data);
+    //  console.log(data);
 
      for (let i =0; i<100; i++) {
 
@@ -113,9 +113,26 @@ document.querySelector('#search').onkeyup = function (ev) {
     }
 }
 
-function loadTrack () {
-const template=
-`
-    src="https://open.spotify.com/embed/track/${track.id}?utm_source=generator&theme=0" 
-`
+async function loadTrack (term) {
+
+    document.querySelector('#artist').innerHTML = '';
+
+    const url = `https://www.apitutor.org/spotify/simple/v1/search?type=track&q=${term}`;
+    const data = await fetch(url).then(response => response.json());
+
+    console.log(data);
+
+    const artist = data[0];
+     const template=`
+        <iframe style="border-radius:12px" 
+        src="https://open.spotify.com/embed/track/5y8d8RHvxb0KiTa9Nq0xWp?utm_source=generator&theme=0" 
+        width="100%" 
+        height="352" 
+        frameBorder="0" 
+        allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy">
+        </iframe>
+    `;
+    document.querySelector('#artist').innerHTML += template;
 }
