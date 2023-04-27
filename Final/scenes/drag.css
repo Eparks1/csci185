@@ -4,6 +4,7 @@
 
 
 body {
+  
     display: grid;
     grid-row: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
@@ -11,16 +12,19 @@ body {
 }
 
 #target {
+  background-color: #ffffff;
     display: flex;
     justify-content: center;
 }
 
 #d2 {
+  background-color: #ffffff;
     display: flex;
     justify-content: center;
 }
 
 #drag {
+  background-color: #ffffff;
     display: flex;
     justify-content: flex-start;
 }
@@ -573,4 +577,18 @@ h2, p {
     text-decoration: none;
   }
 
- 
+ body {
+  background-color: black;
+ }
+
+ h2, p{
+  color: #ffffff;
+ }
+
+ h2 {
+  font-size: 30px;
+ }
+
+ p {
+  font-size: 20px;
+ }
