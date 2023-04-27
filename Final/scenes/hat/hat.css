@@ -145,3 +145,22 @@ span:nth-child(10){
   animation-delay:2.75s ;
   animation-duration: 2.25s;
 }
+
+#hat {
+  display: flex;
+  justify-content:center;
+}
+
+h1 {
+  color: #fff;
+ font-size: 50px;
+ padding-left: 30px;
+ padding-top: 30px;
+}
+
+h2 {
+  color: #fff;
+  padding-left: 50px;
+  padding-top: 30px; 
+  font-size: 50px;
+}
